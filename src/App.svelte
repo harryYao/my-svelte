@@ -1,15 +1,23 @@
 <script>
 	import Test from './components/test.svelte';
+	import Attr from './components/attr.svelte'
 	export let name;
 	let str = '今天是个好天气！';
 	let src= 'assets/imgs/a.png'
+	let attr = {
+		name: 'BenBen',
+		version: '2.1.3',
+		desc: ' sbsbsb. ',
+		date: new Date()
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<h4>{str}</h4>
 	<!-- <img src={src} alt=""> -->
-	<Test></Test>
+	<Test age="{20}"></Test>
+	<Attr {...attr}></Attr>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 

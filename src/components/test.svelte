@@ -10,7 +10,8 @@
 </div>
 
 <script>
-  let name = 'I\'m a test component!';
+  export let age;
+  let name = `I'm a test component! Export ${age}`;
   let string = `this string contains some <strong>HTML!!!</strong>`;
   let count = 0;
   $: doubled = count * 2; // 计算属性，类似VUE中的computed
