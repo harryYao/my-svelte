@@ -1,1 +1,3 @@
-进度 ： https://www.sveltejs.cn/tutorial/updating-arrays-and-objects
+进度 ：https://www.sveltejs.cn/tutorial/await-blocks
+
+
