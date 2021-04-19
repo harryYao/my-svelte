@@ -1,16 +1,22 @@
-<div>
-  <p class="test">{name}</p>
-  <p class="showttml">{@html string}</p>
-  <p>{count}</p>
-  <p>{doubled}</p>
-  <button on:click="{handleClick}">Add</button>
-  <p>{numbers.join(' + ')} = {sum}</p>
 
-  <button on:click="{addNumber}">Push A Number</button>
+<div>
+  {#if showbase}
+    <p class="test">{name}</p>
+    <p class="showttml">{@html string}</p>
+    <p>{count}</p>
+    <p>{doubled}</p>
+    <button on:click="{handleClick}">Add</button>
+  
+
+  {:else}
+    <p>{numbers.join(' + ')} = {sum}</p>
+    <button on:click="{addNumber}">Push A Number</button>
+  {/if}
 </div>
 
 <script>
   export let age;
+  let showbase = false;
   let name = `I'm a test component! Export ${age}`;
   let string = `this string contains some <strong>HTML!!!</strong>`;
   let count = 0;
