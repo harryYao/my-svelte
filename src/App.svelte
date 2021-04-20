@@ -16,6 +16,7 @@
 </script>
 
 <main>
+	<input type="text" bind:value="{name}">
 	<h1>Hello {name}!</h1>
 	<h4>{str}</h4>
 	<!-- <img src={src} alt=""> -->
