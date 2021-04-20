@@ -10,6 +10,9 @@
 		desc: ' sbsbsb. ',
 		date: new Date()
 	}
+	function handleMessage (event) {
+		alert(event.detail)
+	}
 </script>
 
 <main>
@@ -17,7 +20,7 @@
 	<h4>{str}</h4>
 	<!-- <img src={src} alt=""> -->
 	<Test age="{20}"></Test>
-	<Attr {...attr}></Attr>
+	<Attr {...attr} on:message="{handleMessage}"></Attr>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
 </main>
 

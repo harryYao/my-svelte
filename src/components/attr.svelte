@@ -9,11 +9,16 @@
     <p style="color: red">{error.message}</p>
   {/await}
 </div>
-<div class="mousebox" on:mousemove={handleMousemove}>
+<div class="mousebox" on:mousemove={e => m = { x: e.clientX, y: e.clientY }}>
 	The mouse position is {m.x} x {m.y}
 </div>
 
+<div>
+  <button on:click="{sayHello}">Say Hello</button>
+</div>
+
 <script>
+  import { createEventDispatcher } from 'svelte';
   export let name;
   export let version;
   export let desc;
@@ -34,9 +39,14 @@
   }
   let m = { x: 0, y: 0 };
 
-	function handleMousemove(event) {
-		m.x = event.clientX;
-		m.y = event.clientY;
+	// function handleMousemove(event) {
+	// 	m.x = event.clientX;
+	// 	m.y = event.clientY;
+	// }
+
+  const dispatch = createEventDispatcher();
+  function sayHello() {
+		dispatch('message', 'Hello Every One!');
 	}
 </script>
 
