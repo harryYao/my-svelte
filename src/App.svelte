@@ -2,6 +2,7 @@
 	import Test from './components/test.svelte';
 	import Attr from './components/attr.svelte';
 	import Domclick from './components/domclick.svelte'
+	import BindGroup from './components/bindgroup.svelte'
 	export let name;
 	let str = '今天是个好天气！';
 	let src= 'assets/imgs/a.png'
@@ -27,6 +28,7 @@
 	<Test age="{20}"></Test>
 	<Attr {...attr} on:message="{handleMessage}"></Attr>
 	<Domclick on:click="{handleDomClick}"></Domclick>
+	<BindGroup></BindGroup>
 </main>
 
 <style>
