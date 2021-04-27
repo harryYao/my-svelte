@@ -21,7 +21,11 @@
 ```
 
 
-## npm i -D svelte-preprocess node-sass 时报错
+## 集成sass
+参考：https://github.com/KeiferJu/svelte-sass-template
+依赖：https://github.com/sveltejs/svelte-preprocess
+安装 npm i -D svelte-preprocess node-sass 时报错
+解决： 多试几次
 
 “E:\learning\svelte\my-svelte\node_modules\node-sass\build\binding.sln”(默认目标) (1) ->
 “E:\learning\svelte\my-svelte\node_modules\node-sass\build\binding.vcxproj.metaproj”(默认目标) (2) ->
