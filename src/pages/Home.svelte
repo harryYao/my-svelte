@@ -5,6 +5,7 @@
   <div class="nav">
     <a href="/" use:link>Home</a>
     <a href="/about" use:link>About</a>
+    <a href="/userinfo/123" use:link>UserInfo</a>
   </div>
 
 	<input type="text" bind:value="{name}">
