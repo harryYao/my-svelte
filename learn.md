@@ -19,3 +19,13 @@
 	Click me
 </span>
 ```
+
+
+## npm i -D svelte-preprocess node-sass 时报错
+
+“E:\learning\svelte\my-svelte\node_modules\node-sass\build\binding.sln”(默认目标) (1) ->
+“E:\learning\svelte\my-svelte\node_modules\node-sass\build\binding.vcxproj.metaproj”(默认目标) (2) ->
+“E:\learning\svelte\my-svelte\node_modules\node-sass\build\binding.vcxproj”(默认目标) (4) ->
+(Link 目标) ->
+  C:\\Users\\yxls0\\AppData\\Local\\node-gyp\\Cache\\12.14.1\\x64\\node.lib : fatal error LNK1106: 文件无效或磁盘已满: 无法查找到 0x2F229C [E:\learning\svelte\my-svelte\node_modules\node
+-sass\build\binding.vcxproj]

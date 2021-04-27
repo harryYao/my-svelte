@@ -10,7 +10,7 @@
   {/await}
 </div>
 <div class="mousebox" on:mousemove={e => m = { x: e.clientX, y: e.clientY }}>
-	The mouse position is {m.x} x {m.y}
+  <span>	The mouse position is {m.x} x {m.y}</span>
 </div>
 
 <div>
@@ -50,12 +50,15 @@
 	}
 </script>
 
-<style>
+<style lang="scss">
   .mousebox {
     text-align: left;
     margin: auto;
     width: 600px;
     height: 300px;
     border: 1px solid #345678;
+    span {
+      font-size: 20px;
+    }
   }
 </style>
