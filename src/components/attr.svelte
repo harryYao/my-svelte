@@ -19,6 +19,7 @@
 
 <script>
   import { createEventDispatcher } from 'svelte';
+  import Toast from "lbl-toast"
   export let name;
   export let version;
   export let desc;
@@ -35,6 +36,7 @@
     }
   }
   function handleClick() {
+    Toast.info("普通信息 toast")
     promise = getdata();
   }
   let m = { x: 0, y: 0 };
