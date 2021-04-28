@@ -33,3 +33,9 @@
 (Link 目标) ->
   C:\\Users\\yxls0\\AppData\\Local\\node-gyp\\Cache\\12.14.1\\x64\\node.lib : fatal error LNK1106: 文件无效或磁盘已满: 无法查找到 0x2F229C [E:\learning\svelte\my-svelte\node_modules\node
 -sass\build\binding.vcxproj]
+
+根据参考文档，引入第三方的样式文件需要引入 rollup-plugin-postcss， 实测，不用引入，但是缺少css.map文件
+
+
+## svelte 组件库
+https://sveltesociety.dev/components/
